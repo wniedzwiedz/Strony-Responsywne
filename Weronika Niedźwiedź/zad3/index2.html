@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MENU</title>
+
+
+</head>
+
+<style>
+*{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+.menu{
+    display: flex;
+	flex-direction: row;
+    align-items: stretch;
+    background-color:whitesmoke;
+    border: 2px red;
+    height: 40px;
+}
+.item{
+  display: flex;
+  justify-content: center;
+  background-color: crimson;
+  padding: 3%;
+  align-items:center;
+  border: 2px black;
+}
+.item:hover{
+    background-color: lightcoral;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+
+}
+
+</style>
+
+<body>
+
+		<div class="menu">
+      <div class="left">
+          <div class="item">Home</div>
+          <div class="item">About Us</div>
+          <div class="item">Services</div>
+      </div>
+      <div class="right">
+          <div class="item">Sign Up</div>
+          <div class="item">Login</div>
+      </div>
+  </div>
+
+</body>
+</html>

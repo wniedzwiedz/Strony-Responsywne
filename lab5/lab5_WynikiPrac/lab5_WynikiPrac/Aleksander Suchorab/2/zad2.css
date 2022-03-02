@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+picture {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-menu {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 300px;
+    background-color: #ffffffaa;
+    padding: 8px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.slider-container > p {
+    margin: 0;
+    width: 150px;
+}
+
+.slider-container > input {
+    width: 100%;
+}
+
+.slider-container > output {
+    width: 60px;
+}

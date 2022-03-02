@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment: aligning individual items on the cross axis</title>
+    <link rel="stylesheet" href="style1.css">
+  
+  <style>
+
+    .box {
+    display: flex;
+    justify-content: left;
+    height: 120px;
+    border: 2px solid steelblue;
+    align-items: flex-start;
+    }
+
+    .box > div {
+      display: flex;
+      padding: 10px;
+      background-color:lightsteelblue;
+
+      border: 2px solid steelblue;
+      border-radius: 5px;
+
+    }
+
+    .box>*:first-child {
+    align-self: stretch;
+    }
+
+    .box .selected {
+    align-self: center;
+  } 
+
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="box">
+      <div>One</div>
+      <div>Two</div>
+      <div class="selected">Three</div>
+      <div>Four</div>
+    </div>
+
+  </section>
+
+</body>
+
+
+</html>

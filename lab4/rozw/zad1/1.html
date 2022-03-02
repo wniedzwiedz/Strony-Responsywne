@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 1</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .tab {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <p>ELEMENT</p>
+        <p>DŁUGOŚĆ</p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+    </div>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+
+
+</body>
+
+</html>
+
+<script>
+    tablica = new Array(5)
+    tablica[0] = "nda"
+    tablica[1] = "aaaa"
+    tablica[2] = "fegesa"
+    tablica[3] = "drg"
+    tablica[4] = "jngajnaf"
+
+
+
+    document.getElementById("demo1").innerHTML = tablica
+    document.getElementById("demo2").innerHTML = tablica.length
+    document.getElementById("demo3").innerHTML = (tablica[0])
+    document.getElementById("demo4").innerHTML = document.getElementById("demo3").innerHTML.length
+    document.getElementById("demo5").innerHTML = (tablica[tablica.length - 1])
+    document.getElementById("demo6").innerHTML = document.getElementById("demo5").innerHTML.length
+
+    tablica.push("PAW")
+    function makeUpperCase(v) {
+        return v.toUpperCase();
+    }
+    var uppers = tablica.map(makeUpperCase);
+    var lens = []
+
+    tablica.forEach(element => {
+        lens.push(element.length)
+    });
+
+
+    document.getElementById("demo7").innerHTML = uppers
+    document.getElementById("demo8").innerHTML = lens
+
+    tablica.push("nkfjen")
+    tablica.unshift("sfj")
+
+    document.getElementById("demo9").innerHTML = tablica
+
+    if (tablica.length >= 2) {
+        tablica.splice(2, 1)
+    }
+
+    document.getElementById("demo10").innerHTML = tablica
+
+    const Users = [
+        { name: "Grzegorz", age: 102 },
+        { name: "Ula", age: 18 },
+        { name: "Ania", age: 22 },
+        { name: "Marzena", age: 6 },
+        { name: "Kamil", age: 14 },
+        { name: "Aleksander", age: 57 }
+    ]
+
+    document.getElementById("demo11").innerHTML = Users[1].age
+
+    function pelnoletni(v) {
+        if (v.age >= 18) {
+            return v.name;
+        }
+    }
+    var peln = Users.map(pelnoletni);
+
+    imiona = []
+    Users.forEach(element => {
+        if (element.age >= 18) {
+            imiona.push(element.name)
+        }
+    });
+
+    document.getElementById("demo12").innerHTML = imiona
+</script>

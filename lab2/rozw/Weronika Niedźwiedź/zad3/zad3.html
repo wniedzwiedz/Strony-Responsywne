@@ -1,0 +1,516 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 1 - materialy startowe</title>
+    <style>
+        body {
+            background-color: lightcyan;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        .content {
+            padding: 5%;
+            padding-top: 70px;
+
+        }
+
+        header {
+            background-color: cadetblue;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            height: 40px;
+            left: 0px;
+            top: 0px;
+
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .logo {
+            background-color: cornsilk;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+            width: 60px
+        }
+
+
+        @media (min-width: 541px) {
+            .mobile-menu {
+                display: none;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: center;
+                color: black;
+                width: 70%;
+                padding-right: 5%;
+
+            }
+
+            nav div {
+                padding: 1%;
+                margin: 1%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 540px) {
+
+            nav {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+
+            input[type="checkbox"]:checked~nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mobile-menu>nav {
+                position: fixed;
+                right: 0px;
+                top: 60px;
+                width: 100%;
+                background-color: cornsilk;
+            }
+
+            .mobile-menu>nav div {
+                padding: 1%;
+                margin: 1%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .mobile-menu>input[type="checkbox"] {
+                width: 40px;
+                height: 40px;
+                opacity: 0;
+                margin: 0%;
+                right: 40px;
+                position: fixed;
+            }
+
+            .mobile-menu>.icon {
+                position: fixed;
+                right: 40px;
+                width: 40px;
+                height: 40px;
+                margin: 0%;
+                background-color: cornsilk;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">LOGO</div>
+
+        <nav>
+            <div>Usługi</div>
+            <div>Wdrożenia</div>
+            <div>O firmie</div>
+            <div>Zespół</div>
+            <div>Kontakt</div>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="icon">🍔</div>
+            <input type="checkbox">
+            <nav>
+                <div>Usługi</div>
+                <div>Wdrożenia</div>
+                <div>O firmie</div>
+                <div>Zespół</div>
+                <div>Kontakt</div>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <h3>PORWANIE</h3>
+        <p>
+
+            We wtorek zbudziłem się o tej porze bezdusznej i nikłej, kiedy właściwie 
+            noc się już skończyła, a świt nie zdążył jeszcze zacząć się na dobre. Zbudzony 
+            nagle, chciałem pędzić taksówką na dworzec, zdawało mi się bowiem, że 
+            wyjeżdżam — dopiero w następnej minucie z biedą rozeznałem, że pociąg dla 
+            mnie na dworcu nie stoi, nie wybiła żadna godzina. Leżałem w mętnym świetle, 
+            a ciało moje bało się nieznośnie, uciskając strachem mego ducha, duch uciskał 
+            ciało i każda najdrobniejsza fibra kurczyła się w oczekiwaniu, że nic się nie 
+            stanie, nic się nie odmieni, nic nigdy nie nastąpi i cokolwiek by się 
+            przedsięwzięło, nie pocznie się nic i nic. Był to lęk nieistnienia, strach niebytu, 
+            niepokój nieżycia, obawa nie-rzeczywistości, krzyk biologiczny wszystkich 
+            komórek moich wobec wewnętrznego rozdarcia, rozproszenia i rozproszko-
+            wania. Lęk nieprzyzwoitej drobnostkowości i małostkowości, popłoch 
+            dekoncentracji, panika na tle ułamka, strach przed gwałtem, który miałem w 
+            sobie, i przed tym, który zagrażał od zewnątrz — a co najważniejsza, ciągle mi 
+            towarzyszyło, ani na krok nie odstępując, coś, co bym mógł nazwać samopo-
+            czuciem wewnętrznego, między cząsteczkowego przedrzeźniania i szyderstwa, 
+            wsobnego prześmiechu rozwydrzonych częścK mego ciała i analogicznych 
+            części mego ducha.              ^
+            Sen, który mię trapił w nocy i obudził, był wykładnikiem lęku. fNawrotem 
+            czasu, który powinien być zabroniony naturze, ujrzałem siebie takim, jakim 
+            byłem, gdym miał lat piętnaście i szesnaście — przeniosłem się w młodość — i 
+            stojąc na wietrze, na kamieniu, tuż koło młyna nad rzeką, mówiłem coś, 
+            słyszałem dawno pogrzebany swój głosik koguci, piskliwy, widziałem nos 
+            niewyrośnięty na twarzy niedokształto-wanej i ręce za wielkie — czułem 
+            niemiłą konsystencję tej fazy rozwoju pośredniej, przejściowej. Zbudziłem się 
+            w śmiechu i w strachu, bo mi się zdawało, że taki, jak jestem dzisiaj, po 
+            trzydziestce, przedrzeźniam i wyśmiewam sobą niewypierzo-nego chłystka, 
+            jakim byłem, a on znowu przedrzeźnia mnie — i równym prawem — że obaj 
+            jesteśmy sobą przedrzeźniani. Nieszczęsna pamięci, która każesz wiedzieć, 
+            jakimi drogami doszliśmy do obecnego stanu posiadania!-A dalej, wydało mi 
+            się w półśnie, ale już po obudzeniu, że ciało moje nie jest jednolite, że niektóre 
+            części są jeszcze chłopięce i że moja głowa wykpiwa i wyszydza łydkę, łydka 
+            zasię głowę, że palec nabija się z serca, serce z mózgu, nos z oka, oko z nosa 
+            rechocze i ryczy — i wszystkie te części gwałciły się dziko w atmosferze 
+            wszechobejmującego i przejmującego panszyderstwa. A kiedym na dobre 
+            odzyskał świadomość i jąłem przemy śliwać nad swym życiem, lęk nie 
+            zmniejszył się ani na jotę, ale stał się jeszcze potężniejszy, choć chwilami 
+            przerywał go (czy wzmagał) śmieszek, od którego usta niezdolne były się 
+            powstrzymać. W połowie drogi mojego żywota pośród ciemnego znalazłem się 
+            lasu. Las ten, co gorsza, był zielony.
+            Gdyż na jawie byłem równie nie ustalony, rozdarty — jak we śnie. Przeszedłem 
+            niedawno Rubikon nieuniknionego trzydziestaka, minąłem kamień milowy, z 
+            metryki, z pozorów wyglądałem na człowieka dojrzałego, a jednak nie byłem 
+            nim — bo czymże byłem? Trzydziestoletnim graczem w bridża? Pracownikiem 
+            przypadkowym i przygodnym,który załatwiał drobne czynności życiowe i 
+            miewał terminy ?»Jakaż była moja sytuacja? Chodziłem po kawiarniach i po 
+            barach, spotykałem się z ludźmi zamieniając słowa, czasem nawet myśli, ale 
+            sytuacja 6 była nie wyjaśniona i sam nie wiedziałem, czym człowiek, czym
+            chłystek; i tak na przełomie lat nie byłem ani tym, ani owym — byłem niczym 
+            — a rówieśnicy, którzy już się pożenili oraz pozajmowali określone stanowiska, 
+            nie tyle wobec życia, ile po rozmaitych urzędach państwowych, odnosili się do 
+            mnie z uzasadnioną nieufnością. Ciotki moje, te liczne ćwierćmatki doczepione, 
+            przyłatane, ale szczerze kochające, już od dawna usiłowały na mnie wpływać, 
+            abym się ustabilizował jako ktoś, a więc jako adwokat albo jako biuralista — 
+            nieokreśloność moja była im niezwykle przykra, nie wiedziały, jak rozmawiać ze 
+            mną nie wiedząc, kim jestem, co najwyżej marniały tylko.
+            — Józiu — mówiły pomiędzy jednym mamlęciem a drugim — czas 
+            najwyższy, dziecko drogie. Co ludzie powiedzą? Jeżeli nie chcesz być lekarzem, 
+            bądźźe przynajmniej kobie-ciarzem lub koniarzem, ale niech będzie wiadomo... 
+            niech będzie wiadomo...
+            I słyszałem, jak jedna szeptała do drugiej, że jestem niewyrobiony 
+            towarzysko i życiowo, po czym znowu zaczynały mamiąc umęczone próżnią, 
+            jaką tworzyłem im w głowie. W istocie, stan ten nie mógł trwać wiecznie. 
+            Wskazówki zegara natury były nieubłagane i stanowcze. Gdy ostatnie zęby, zęby 
+            mądrości, mi wyrosły, należało sądzić — rozwój został dokonany, nadszedł czas 
+            nieuniknionego mordu, mężczyzna winien zabić nieutulone z żalu chłopię, jak 
+            motyl wyfrunąć, pozostawiając trupa poczwarki, która się skończyła. Z tumanu, 
+            z chaosu, z mętnych rozlewisk, wirów, szumów, nurtów, ze trzcin i szuwarów, z 
+            rechotu żabiego miałem się przenieść pomiędzy formy klarowne, 
+            skrystalizowane — przyczesać się, uporządkować, wejść w życie społeczne 
+            dorosłych i rajcować z nimi.
+            Jakże! Próbowałem już, usiłowałem — i śmieszek mną wstrząsał na myśl o 
+            rezultatach próby. Aby się przyczesać i w miarę możności wyjaśnić, 
+            przystąpiłem do napisania książki — dziwne, lecz mi się zdawało, że moje 
+            wejście w świat nie może obyć się bez wyjaśnienia, choć nie widziano jeszcze 
+            wyjaśnienia, które by nie było zaciemnieniem. Pragnąłem naprzód książką 
+            wkupić się w ich łaski, aby potem w osobistym zetknięciu zastać już grunt 
+            przygotowany i — kalkulowałem — 7
+            jeżeli zdołam zasiać w duszach dodatnie wyobrażenie o sobie, to wyobrażenie i 
+            mnie z kolei ukształtuje, w ten sposób choćbym nie chciał, stanę się dojrzały. 
+            Dlaczego jednak pióro mnie zdradziło? Czemu święty wstyd mi nie dozwolił 
+            napisać notorycznie zdawkowej powieści i zamiast snuć górne wątki z serca, z 
+            duszy, wysnułem je z dolnych odnóży, pomieściłem w tekście jakieś żaby, 
+            nogi, same treści niedojrzałe i sfermentowane, jedynie stylem, głosem, tonem 
+            chłodnym i opanowanym izolując je na papierze, wykazując, że oto pragnę 
+            wziąć rozbrat z fermentem? Dlaczego, jak gdyby na przekór własnym 
+            zamierzeniom, książce dałem tytuł Pamiętnik z okresu dojrzewania^ Próżno 
+            przyjaciele doradzali mi, abym nie dawał takiego tytułu i strzegł się w ogóle 
+            najdrobniejszej aluzji do niedojrzałości. — Nie rób tego — mówili — 
+            niedojrzałość drastyczne pojęcie, jeśli sam siebie uznasz niedojrzałym, któż cię 
+            dojrzałym uzna? Czyliż nie rozumiesz, że pierwszym warunkiem dojrzałości, 
+            bez którego ani, ani, jest — samemu uznać się dojrzałym? Lecz mnie się 
+            zdawało, że wprost nie wypada zbyt łatwo i tanio zbywać smarkacza w sobie, 
+            że Dorośli zbyt są bystrzy i wnikliwi, aby dali się oszukać, i że temu, kogo 
+            smarkacz ściga nieustannie, nie wolno ukazać się publicznie bez smarkacza. Za 
+            poważny może miałem stosunek do powagi, zanadto przeceniłem dorosłość 
+            dorosłych.
+            Wspomnienia, wspomnienia! Z głową wtuloną w poduszkę, z nogami pod 
+            kołdrą, miotany już to śmieszkiem, już to lękiem, czyniłem bilans wejścia 
+            pomiędzy dorosłych. Za dużo się milczy o osobistych, wewnętrznych skazach i 
+            spaczeniach tego wejścia, na zawsze brzemiennego w konsekwencje. Literaci, 
+            ci ludzie posiadający boski dar talentu na temat rzeczy najdalszych i 
+            najbardziej obojętnych, jak na przykład dramat duszy cesarza Karola II z 
+            powodu małżeństwa Brunhil-dy, wzdragają się poruszać sprawę najważniejszą 
+            swej przemiany w człowieka publicznego, społecznego. Pragnęliby, widać, aby 
+            każdy myślał, że są pisarzami z łaski boskiej, a nie — ludzkiej, że z nieba 
+            spadli na ziemię wraz z talentem swoim;
+            żenują się wyświetlić, jakimi to osobistymi koncesjami, jaką 8 klęską personalną 
+            okupili prawo wypisywania o Brunhildzie
+            lub chociażby o życiu pszczelarzy. Nie, o własnym życiu ani słowa — tylko o 
+            życiu pszczelarzy. Zapewne, wypisawszy dwadzieścia książek o życiu 
+            pszczelarzy, można zrobić się posagiem — ale jakiż związek, gdzie łączność 
+            pszczelarskiego króla z jego prywatnym mężczyzną, gdzie łączność mężczyzny z 
+            młodzieńcem, młodzieńca z chłopcem, chłopca z dzieckiem, którym przecie 
+            onegdaj się było, jaką pociechę ma smarkacz wasz z waszego króla? Życie, które 
+            nie przestrzega tych połączeń i nie realizuje własnego rozwoju w całej 
+            rozciągłości, jest jak dom budowany od góry i nieuchronnie musi skończyć na 
+            schizofrenicznym rozdwojeniu jaźni.
+            Wspomnienia! Przekleństwem ludzkości jest, iż egzystencja nasza na tym 
+            świecie nie znosi żadnej określonej i stałej hierarchii, lecz że wszystko ciągle 
+            płynie, przelewa się, rusza i każdy musi być odczuty i oceniony przez każdego, a 
+            pojęcie o nas ciemnych, ograniczonych i tępych jest nie mniej doniosłe niż 
+            pojęcie bystrych, światłych i subtelnych. Gdyż człowiek jest najgłębiej 
+            uzależniony od swego odbicia w duszy drugiego człowieka, chociażby ta dusza 
+            była kretyniczna. I stanowczo przeczę zdaniu tych moich kolegów po piórze, 
+            którzy w odniesieniu do opinii tępych przyjmują postawę arystokratyczną i 
+            wyniosłą głosząc, że odi profanum vulgus. Cóż to za tani, uproszczony sposób 
+            uchylania się rzeczywistości, jakże nędzna ucieczka w kłamaną wyniosłość! 
+            Wręcz przeciwnie, twierdzę, że im bardziej opinia jest tępa i ciasna, tym bardziej 
+            jest dla nas ważka i paląca, zupełnie tak samo, jak ciasny trzewik dotkliwiej daje 
+            się we znaki niż trzewik dobrze dopasowany do nogi. O, te sądy ludzkie, ta 
+            otchłań sądów i opinii o twoim rozumie, sercu, charakterze, o wszystkich 
+            szczegółach twej organizacji — otwierająca się przed śmiałkiem, który swoje 
+            myśli ubrał drukiem i puścił między ludzi na papierze, o, papier, papier, druk, 
+            druk! I nie mówię tutaj o najserdeczniejszych, najmilszych sądach familijnych 
+            ciotek naszych, nie, raczej chciałbym dotknąć sądów innych ciotek — ciotek 
+            kulturalnych, tych licznych ćwierć-autorek i doczepionych pół-krytyczek, 
+            wypowiadających sądy swe po czasopismach. Gdyż kulturę świata obsiadło stado 
+            babin przyczepionych, 9
+            przyłatanych do literatury, niezmiernie wprowadzonych w wartości 
+            duchowe i zorientowanych estetycznie, najczęściej z jakimiś swoimi 
+            poglądami i przemyśleniami, uświadomionych, że Oskar Wilde się 
+            przeżył i że Bernard Shaw jest mistrzem paradoksu. Ach, wiedzą już, 
+            że trzeba być niezależną, stanowczą i głębszą, przeto zazwyczaj są 
+            niezależne, głębsze i stanowcze bez przesady oraz pełne ciotczynej 
+            dobroci. Ciocia, ciocia, ciocia! O, kto nigdy nie znalazł się na 
+            warsztacie kulturalnej ciotki i nie był spreparowany niemo i bez jęku 
+            przez tę ich mentalność trywializującą i odbierającą życiu wszelkie 
+            życie, kto nie przeczytał o sobie w gazecie ciotczynego sądu, ten nie 
+            zna drobnostki, ten nie wie, co to jest drobnostka w ciotce.
+            A dalej, weźmy sądy ziemian i ziemianek, sądy pensjonarek, 
+            małostkowe sądy drobnych urzędników oraz biurokratyczne sądy 
+            wyższych urzędników, sądy adwokatów na prowincji, przesadne sądy 
+            uczniów, zarozumiałe sądy staruszków tudzież sądy publicystów, sądy 
+            działaczów społecznych oraz sądy żon doktorów, wreszcie sądy dzieci 
+            przysłuchujących się sądom rodzicielskim, sądy pokojówek, młodszych i 
+            kucharek, sądy kuzynek, sądy pensjonarek — całe morze sądów, z któ-
+            rych każdy określa cię w drugim człowieku i stwarza cię w jego duszy. 
+            Jak gdybyś się rodził w tysiącu przyciasnych dusz! Lecz moje położenie 
+            było tu o tyle bardziej trudne i drażliwe, o ile książka moja była 
+            trudniejsza, drażliwsza od konwencjonalnie dojrzałej lektury. Zyskała mi 
+            wprawdzie grono nie byle jakich przyjaciół i gdyby ciotki kulturalne oraz 
+            inni przedstawiciele pospólstwa mogli słyszeć, jak w zamkniętym i nawet 
+            ich marzeniom niedostępnym kółku karmiony bywam przez Uznanych i 
+            Świetnych świetnością, uznaniem i wiodę intelektualne rozmowy na 
+            szczytach, chyba padliby plackiem przede mną i lizaliby moje stopy. Ale 
+            z drugiej strony musiało być w niej coś niedojrzałego, coś, co 
+            upoważniało do poufności i przyciągało istoty pośrednie ni z pierza, ni z 
+            mięsa, tę warstwę najstraszniejszą półinteligentów — okres dojrzewania 
+            zwabił półświatek kultury. Możliwe, iż będąc zbyt subtelna dla ciemnych 
+            umysłów, była jednocześnie za mało wyniosła i nadęta 10 wobec gminu, 
+            który jest wrażliwy tylko na zewnętrzne oznaki
+            powagi. I nieraz, wychodząc z miejsc świątynnych i wspaniałych, gdziem był 
+            fetowany mile poważaniem, spotykałem na ulicy jakąś inżynierową albo 
+            pensjonarkę, które poufale traktowały mię jak swego, jak niedojrzałego 
+            pobratymca i swojaka, klepały po ramieniu i wołały: — Serwus, Józiek, ty 
+            głupi, ty — ty niedojrzały! — I tak jednym byłem mądry, drugim głupi, jednym 
+            znaczny, drugim ledwie dostrzegalny, jednym pospolity, drugim 
+            arystokratyczny. Rozpięty pomiędzy wyższością i niższością, spoufalony 
+            zarówno z tym i z tamtym, poważany i lekceważony, pyszny i wzgardzony, 
+            zdolny i niezdolny, jak popadnie, jak się ułoży sytuacja! Życie moje stało 
+            siębdtąd rozdarte bardziej, niż było za dni spędzanych w zaciszu domowym. I 
+            nie wiedziałem, czyj jestem — czy tych, co mnie cenią, czy tych, co nie cenią 
+            mnie.
+            Ale, co najgorsza — że nienawidząc gminu półinteligentów, jak jeszcze chyba 
+            nigdy nikt nie nienawidził, nienawidząc wrogo, zdradzałem sam siebie z gminem; 
+            opierałem się elicie i arystokracji i uciekałem od jej przyjaźnie otworzonych ra-
+            mion w chamskie łapy tych, którzy mieli mnie za chłystka. W istocie jest rzeczą 
+            pierwszorzędnej wagi i rozstrzygającą o dalszym rozwoju, względem czego 
+            człowiek się ustawia i organizuje — czy na przykład działając, mówiąc, bredząc, 
+            pisząc ma na myśli, bierze pod uwagę jedynie ludzi dorosłych, skończonych, świat 
+            pojęć jasnych, skrystalizowanych, czy też nieustannie prześladuje go wizja gminu, 
+            niedojrzałości, uczniów, pensjonarek, obywateli ziemskich i wiejskich, ciotek 
+            kulturalnych, publicystów i felietonistów, wizja podejrzanego, mętnego 
+            półświatka, który gdzieś tam czai się na ciebie i powoli obrasta cię zielenią jak 
+            pnącze, liany i inne rośliny w Afryce. Ani na chwilę nie mogłem zapomnieć o nie-
+            doświatku ludzi niedoludzkich — i bojąc się panicznie, brzydząc się okropnie, 
+            wzdrygając się na samo wyobrażenie jego bagnistej zieleni, nie umiałem jednak 
+            się oderwać, byłem zafascynowany jak ptaszę widokiem węża. Jakby demon jakiś 
+            kusił mię do niedojrzałości! Jakbym w kontmaturze sprzyjał niższej sferze i 
+            kochał — za to, że przytrzymuje mnie u siebie chłystkiem. Nie mogłem ani przez 
+            jedną sekundę mówić mą- 11
+            drze, chociażby na tyle, na ile zdobyć się potrafię, ponieważ wiedziałem, że 
+            gdzieś tam na prowincji pewien lekarz ma mnie za głupiego i oczekuje ode 
+            mnie jeno głupstwa; i wcale nie mogłem zachowywać się przyzwoicie i 
+            poważnie w towarzystwie, gdyż wiedziałem, że niektóre pensjonarki oczekują 
+            ode mnie samych nieprzyzwoitości. Zaprawdę, w świecie ducha odbywa się 
+            gwałt permanentny, nie jesteśmy samoistni, jesteśmy tylko funkcją innych 
+            ludzi, musimy być takimi, jakimi nas widzą, a już moją osobistą klęską było, 
+            że z jakąś niezdrową rozkoszą uzależniałem się najchętniej od niedorostków, 
+            wyrostków, podlotków oraz ciotek kulturalnych. A, ciągle, ciągle mieć na 
+            karku ciotkę — być naiwnym dlatego, iż ktoś naiwny sądzi, że jesteś naiwny 
+            — być głupim dlatego, że głupi ma cię za głupiego — być zielonym dlatego, 
+            że ktoś niedojrzały zanurza cię i kąpie we własnej zieleni — a, toż można by 
+            oszaleć, gdyby nie słówko „a", które jakoś żyć pozwala! Ocierać się o ten świat 
+            wyższy i dorosły i nie móc dostać się do niego, być o krok od dystynkcji, 
+            elegancji, rozumu, powagi, od sądów dojrzałych, od wzajemnego uznania, 
+            hierarchii, wartości i jeno przez szybę lizać te cukierki, nie mieć dojścia do 
+            tych spraw, być dodatkowym. Obcować z dorosłymi i wdąż, jak w szesnastu 
+            latach, mieć wrażenie, że się jedynie udaje dorosłego? Udawać pisarza i 
+            literata, parodiować styl literacki i dojrzałe, wyszukane zwroty? Przystępować, 
+            jako artysta, do bezlitosnej rozgrywki publicznej o własne „ja" sprzyjając 
+            podziemnie swym wrogom?
+            O tak, na samym wstępie życia publicznego otrzymałem święcenia 
+            półświetne, zostałem hojnie namaszczony niższą sferą. A co jeszcze bardziej 
+            komplikowało sprawę, to że mój towarzyski sposób bycia również pozostawiał 
+            wiele do życzenia i był zupełnie mętny, marny, zamazany i bezbronny wobec 
+            półświetnych światowców. Jakaś nieumiejętność, zrodzona z przekory, a może z 
+            obawy, nie pozwalała mi zgrać się w żadnej dojrzałości, i nieraz bywało, żem ze 
+            strachu po prostu szczypnął tę osobę, która do mego ducha pochlebnie z duchem 
+            swym występowała. Jakże zazdrościłem owym literatom wysublimo-12 wanym 
+            już w kolebce i widać predestynowanym do wyższości,
+            których Dusza funkcjonowała nieustannie wzwyż, jakby szydłem łcchrana w 
+            sam tyłek — pisarzom poważnym, których Dusza brała się na serio i którzy z 
+            wrodzoną łatwością, w wielkiej męce twórczej, operowali w zakresie pojęć do 
+            tyła górnych, chmurnych i raz na zawsze uświęconych, że sam Bóg był im 
+            nieomal czymś pospolitym i mało szlachetnym. Dlaczegóż nie każdemu 
+            dozwolono napisać jeszcze jedną powieść o miłości albo w ciężkich bólach 
+            rozdrapać jakąś społeczną bolączkę i zostać Bojownikiem sprawy uciśnionych? 
+            Albo wiersze pisać i Poetą stać się i wierzyć „w świetlaną przyszłość poezji"? 
+            Utalentowanym być i duchem swym karmić i podnosić szerokie rzesze duchów 
+            nieutalentowanych? A, cóż za przyjemność dręczyć się i męczyć, poświęcać i 
+            spalać w ofierze, lecz zawsze w zakresie wyższym, w kategoriach tak 
+            wysublimowanych, tak — dorosłych. Satysfakcja własna oraz cudza satysfakcja 
+            — wyżywać się za pośrednictwem tysiącletnich instytucji kulturalnych tak 
+            pewnie, jakby się złożyło swoją sumkę w PKO. Lecz ja byłem, niestety, 
+            chłystek i chłystkowatość była jedyną moją instytucją kulturalną. Podwójnie 
+            przyłapany i ograniczony — raz własną przeszłością dziecinną, o której nic 
+            mogłem zapomnieć — drugi raz dzieciństwem wyobrażeń ludzkich o mnie, tą 
+            karykaturą, jaką się zapadałem w ich duszach — melancholijny niewolnik 
+            zieleni, ot, owad w gąszczu głębokim i gęstym.
+            Nie tylko przykra, lecz i groźna sytuacja. Albowiem Dojrzali niczym się tak 
+            nie brzydzą jak niedojrzałością i nic nie jest im bardziej nienawistne. Zniosą oni 
+            łatwo wszelkie burzy-cielstwo najzaźartsze, byleby odbywało się w ramach dojrza-
+            łości, nie straszny im rewolucjonista, który jeden dojrzały ideał zwalcza drugim 
+            dojrzałym ideałem i na przykład Monarchię burzy gwoli Republice lub też, na 
+            odwrót. Republikę Monarchią napocznie i pożre. Owszem, z przyjemnością widzą, 
+            jak ruch się robi w dojrzałym, wysublimowanym interesie. Lecz jeśli u kogo 
+            zwęszą niedojrzałość, jeśli chłystka i smarkacza zwęszą, wówczas rzucą się na 
+            niego, zadziobią jak łabędzie kaczkę — sarkazmem, ironią, kpiną zakatrupią, nie 
+            dozwolą, by kalał im gniazdo podrzutek ze świata, którego dawno się 1^
+            wyparli. Więc na czym się to skończy? Dokąd zajdę na tej drodze? Na jakim tle 
+            (myślałem) powstało u mnie to niewolnictwo niedokształtowania, to zapamiętanie 
+            w zieleni — czy dlatego, żem pochodził z kraju szczególnie obfitującego w istoty 
+            niewyrobione, poślednie, przejściowe, gdzie na nikim żaden kołnierzyk nie leży, 
+            gdzie nie tyle Smęt i Dola, ile Niezguła z Niedojdą po polach snują się i jęczą? A 
+            może dlatego, iż żyłem w epoce, która co pięć minut zdobywa się na nowe hasła i 
+            grymasy i konwulsyjnie wykrzywia oblicze swe, jak tylko może — w epoce 
+            przejściowej?... Świt blady sączył się przez uchylone story, mnie zaś, gdym tak 
+            sumował bilans mego życia, rumieniec oblewał i podrzucał nieprzyzwoity 
+            śmieszek w prześcieradłach — i wybuchałem bezsilnym zwierzęcym śmiechem, 
+            mechanicznym, nożnym jak podłechty-wany w piętę, jakby to nie twarz, ale noga 
+            moja chichotała. Należało co prędzej skończyć z tym, zerwać z dzieciństwem, 
+            powziąć decyzję i zacząć od nowa — należało począć coś! Zapomnieć, na koniec, 
+            zapomnieć o pensjonarkach! Zerwać z ukochaniem ciotek kulturalnych i 
+            wieśniaczek, zapomnieć o drobnych, drastycznych urzędnikach, zapomnieć o 
+            nodze i własnej haniebnej przeszłości, wzgardzić smarkaczem i chłystkiem — 
+            skonsolidować się twardo na gruncie dorosłym, ach, przyjąć, na koniec, tę 
+            postawę skrajnie arystokratyczną, wzgardzić, wzgardzić! Nie, jak dotąd było, żem 
+            niedojrzałością pobudzał, nęcił i przywabiał niedojrzałość innych, lecz — 
+            przeciwnie — dojrzałość wydobyć z siebie, dojrzałością pobudzić ich do 
+            dojrzałości, duszą przemówić do duszy! Duszą? Lecz czy wolno zapomnieć o 
+            nodze? Duszą? A noga gdzie? Czy wolno zapomnieć o nogach ciotek 
+            kulturalnych? A dalej — co będzie, jeśli mimo wszystko nie uda się przezwycię-
+            żyć pączkującej zewsząd, pulsującej, rosnącej zielem (a na pewno prawie nie uda 
+            się), co będzie, jeśli ja do nich wystąpię dojrzale, a oni mnie po staremu ujmą 
+            niedojrzałe, jeśli ja do nich z mądrością, a oni z głupotą? Nie, nie, w takim razie 
+            wolę pierwszy zacząć niedojrzałe, nie chcę narażać mądrości mej na ich głupotę, 
+            wolę głupotę przeciw nim wystawić! 14 A zresztą nie chcę, nie chcę, wolę z nimi, 
+            kocham, kocham rc
+            pączki, te kiełki, te krzaczki zielone, o! — uczułem, że znów mnie przyłapują, 
+            chwytają w miłosne objęcia, ponownie zaniosłem się śmiechem mechanicznym, 
+            nożnym i zaśpiewałem nieprzyzwoitą piosenkę:
+            W Skolimowie, willi Faramuszce, W 
+            pokoiku bony, panny Mici, Byli skryci w 
+            szafie dwaj bandyci
+            ...gdy nagle w ustach zrobiło mi się gorzko, w gardle zaschło — 
+            spostrzegłem, że nie jestem sam. Był ktoś oprócz mnie w kącie, koło pieca, 
+            gdzie światło jeszcze nie dotarło — drugi człowiek był w pokoju.
+            Jednakże drzwi były zamknięte na klucz. Zatem nie człowiek, tylko zjawa. 
+            Zjawa? Diabeł? Strach? Nieboszczyk? Naraz poczułem, że nie nieboszczyk, ale 
+            żywy człowiek, i momentalnie zjeżyłem się cały — poczułem człowieka jak pies 
+            psa. I znowu w ustach susza, bicie serca, zatamowanie oddechu — to ja sam 
+            stałem pod piecem. Tym razem nie był to sen — naprawdę pod piecem stał 
+            sobowtór. Spostrzegłem jednak, że boi się jeszcze bardziej ode mnie; stał z głową 
+            pochyloną, ze wzrokiem opuszczonym, z rękami wzdłuż boków — lęk jego dodał 
+            mi odwagi. Ukradkiem spod kołdry patrzyłem jakby nie na siebie i widziałem tę 
+            twarz, która była moją i nie moją. Wyłamała się ona z głębokiej i ciemnej zieleni, 
+            sama zielona jaśniej — to oblicze, które nosiłem na sobie. Oto nos mój... oto moje 
+            usta... oto uszy moje, dom mój. Witajcie, znajome kąty! Jak znajome! Jak znałem 
+            to skrzywienie warg, maskujące napięcie lęku. Oto kąciki ust — oto podbródek — 
+            ucho, które ongi naderwał mi Zdziś — znaki i symptomy dwojakich wpływów, 
+            twarz, którą dwie siły, zewnętrzna i wewnętrzna, utarły pomiędzy sobą. Było to 
+            moje — czy też to ja tym byłem — czy też było to cudze — a ja tym byłem 
+            jednak.
+            Nagle wydało mi się nieprawdopodobne, żebym tOJnjał być ja. Jak w lustrze, 
+            gdy się ujrzymy niespodziam^przez chwilę nie jesteśmy pewni, czy to my, tak też 
+            zdziwiła mnie i obraziła zaskakująca konkretność tego kształtu. Ź włosami 15
+            zabawnie ukróconymi i uczesanymi, z powiekami, w spodniach, z narzędziami 
+            do słuchania, patrzenia i oddychania — byłże to przyrząd mój, czy to ja 
+            byłem? Sprecyzowany — wyraźny w konturze i drobiazgowo określony, 
+            szczegółowy... zbyt wyraźny. Musiał spostrzec, że widzę jego szczegóły, gdyż 
+            jeszcze bardziej się zawstydził, uśmiechnął się niewyraźnie i ręką uczynił ruch 
+            niepewny i cofający w mrok.
+            Ale światło potęgowało się z okna i kształt wyłaniał się coraz jaskrawiej — 
+            już palce u rąk było widać i paznokcie — i widziałem... a duch widząc, że widzę, 
+            skulił się trochę i nie patrząc dawał mi znaki ręką, bym nie patrzył. Nie mogłem 
+            nie patrzeć. A więc taki byłem. Dziwny, doprawdy, jak pani de Pompadour. I 
+            przypadkowy. Dlaczego taki, a nie inny? Efemeryda. Wady i usterki wypełzały 
+            mu na światło dzienne, on zaś stał skulony, podobny do stworzeń nocnych, które 
+            światło wydaje na łup — jak szczur przyłapany na środku pokoju. I szczegóły 
+            uwydatniały się coraz lepiej, coraz straszniej, zewsząd wyłaziły mu części ciała, 
+            pojedyncze części, a te części były dokładnie określone, skonkretyzowane... do 
+            granic haniebnej wyrazistości... do granic hańby... Widziałem palec, paznokcie, 
+            nos, oko, udo i stopę, a wszystko wyprowadzone na wierzch — jak 
+            zahipnotyzowany szczegółami wstałem i uczyniłem krok ku niemu. Drgnął i 
+            zamachał ręką — jakby mnie przepraszał za siebie i mówił, że to nie to i wszystko 
+            jedno — pozwól, wybacz, zostaw... ale gest, poczęty ostrzegawczo, skończył się 
+            jakoś nikczemnie — ruszyłem na niego — i nie mogąc już powstrzymać 
+            wyciągniętej ręki trzasnąłem w twarz pełnym zamachem. Precz! Precz! Nie, to 
+            wcale nie ja! To coś przypadkowego, coś obcego, narzuconego, jakiś kompromis 
+            pomiędzy światem zewnętrznym a wewnętrznym, to wcale nie moje ciało! Jęknął 
+            i znikł — dał susa. A ja zostałem sam, a właściwie nie sam — gdyż nie było mnie, 
+            nie czułem, abym był, i każda myśl, każdy odruch, czyn, słowo, wszystko 
+            wydawało się nie moje, lecz jakby gdzieś ustalone poza mną, zrobione dla mnie 
+            — a ja właściwie jestem inny! I wtedy straszne ogarnęło mnie wzburzenie. Ach, 
+            stworzyć 16 formę własną! Przerzucić się na zewnątrz! Wyrazić się!
+            Niech kształt mój rodzi się ze mnie, niech nie będzie zrobi
+
+        </p>
+
+
+    </div>
+
+
+</body>
+
+</html>

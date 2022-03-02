@@ -1,0 +1,24 @@
+1. Strona SPA z leazy loading i efektami paralaxy 3D. 
+Zaprojektować a następnie wykonać stronę o dowolnej tematyce.
+Oczekiwane szczegóły:
+ 
+a. Strona stworzona jako responsywna – obsługująca większość popularnych urządzeń. 
+  
+b. Aplikacja stworzona jako SPA. 
+  
+c. Wykorzystujemy standard HTML5 (znaczniki semantyczne) oraz efekty CSS3 do realizacji warstwy prezentacji. 
+  
+d. Strona powinna zawiera menu horyzontalne, które w przypadku przewijania w dół nie znika ale przykleja się do górnej krawędzi przeglądarki.
+Zalecane pokazywanie w której sekcji dokumentu jesteśmy. 
+   
+e. Każda sekcja powinna mieć własne tło – proszę o zrealizowanie scrollowania wykorzystując efekt parallaxy 3D
+( gdzie np. tło przesuwa się wolniej niż pierwszy plan lub tło jest sukcesywnie przesłaniane przez nowe tło nasuwającej się 
+nowej sekcji – efekt warstwowości). 
+    
+f. Po kliknięciu na element menu strona przewijana jest (symulacja scrolowania) do pozycji wyświetlającej zawartość wybranej opcji menu. 
+
+g. Implementacja koncepcji leazy loadingu. W ramach sekcji stosujemy tę zasadę podczas przewijania w dól i gore - dynamicznego 
+doładowywania zdjęcia lub tekstu tylko dla sekcji aktualnej oraz poprzedzającej i następnej – nie ładujemy od razu całej zwartości na raz. 
+
+h. Ładowany test powinien sprawiać wrażenie rozmywania gdy zbliża się do górnego ograniczenia ekranu lub zwiększa ostrość gdy wyłania 
+się od dołu ( w przypadku scrolowania w dół) lub odwrotnie gdy scrolujemy w górę.

@@ -1,0 +1,218 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NIKE</title>
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    .wrapper {
+
+      color: darkslategray;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: smaller;
+
+      background-color: lightgray;
+      padding: 1%;
+      max-width: 1000px;
+      margin-left: 15%;
+
+    }
+
+    .card {
+      background-color: lightgray;
+      display: flex;
+      flex: 1;
+      max-height: 650px;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+    }
+
+    .background {
+      background-color: steelblue;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5%;
+      width: 90%;
+      height: 90%;
+      align-self: flex-end;
+
+
+    }
+
+    .left-top {
+      display: flex;
+      margin: 5%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 80px;
+    }
+
+    .shoe img {
+      width: 100%;
+    }
+
+    .shoe {
+      margin-left: -30%;
+      margin-bottom: 10%;
+      margin-top: 20%;
+      transform: rotate(-20deg);
+
+    }
+
+    .share {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      border: none;
+    }
+
+    .right {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 5%
+    }
+
+    .right div {
+
+      margin-bottom: 5%;
+
+      border-bottom: 1px solid lightgray;
+    }
+
+    .color {
+      display: flex;
+      gap: 10px;
+      border-bottom: none !important;
+    }
+
+    .color button {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      border: none;
+    }
+
+    .color .blue {
+      background-color: steelblue;
+    }
+
+    .color .red {
+      background-color: crimson;
+    }
+
+    .color .green {
+      background-color: forestgreen;
+    }
+
+    .color .orange {
+      background-color: coral;
+    }
+
+    .color .black {
+      background-color: darkslategray;
+    }
+
+    .size {
+      display: flex;
+      gap: 15px;
+      border-bottom: none !important;
+    }
+
+    .size button {
+      background-color: lightgray;
+      width: 30px;
+      height: 30px;
+      border-radius: 20%;
+      border: none;
+    }
+
+    .add {
+      display: flex;
+      border-bottom: none !important;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+
+    .add button {
+      background-color: mediumblue;
+      color: white;
+      width: 50%;
+      height: 60%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="card">
+
+      <div class="left">
+        <div class="background">
+
+          <div class="left-top">
+            <div class="logo"> <img src="nike.png"></div>
+            <button class="share">O</button>
+          </div>
+
+          <div class="shoe"> <img src="blue.png"></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="title">
+          <h1>Nike Zoom KD 12</h1>
+          <h2>Men's Running Shoes</h2>
+        </div>
+        <div>
+          <h2>PRODUCT INFO</h2>
+          <p>Stwórz artystyczna galerie zdjęć wyglądająca mniej więcej tak jak poniżej.
+            Do jej budowy użyj FlexBox.</p>
+        </div>
+        <div>
+          <h2>COLOR</h2>
+          <div class="color">
+            <button class="blue"></button>
+            <button class="red"></button>
+            <button class="green"></button>
+            <button class="orange"></button>
+            <button class="black"></button>
+          </div>
+        </div>
+        <div>
+          <h2>SIZE</h2>
+          <div class="size">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>11</button>
+          </div>
+        </div>
+        <div class="add">
+          <button>ADD TO CARD</button>
+          <h1>$189.99</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

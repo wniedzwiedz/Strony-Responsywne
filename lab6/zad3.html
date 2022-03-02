@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 3</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <canvas id="canv" width="600" height="1500" style="border:1px solid #d3d3d3;">
+        Tu jest rysunek.
+    </canvas>
+
+    <script>
+        var c = document.getElementById("canv");
+        var ctx = c.getContext("2d");
+
+        var img = new Image();
+        img.src = 'cloud.png';
+
+        var img2 = new Image();
+        img2.src = 'cloud.png';
+
+        img.onload = function () {
+            ctx.drawImage(img, 110, 10, 180, 180)
+        };
+
+        img2.onload = function () {
+            ctx.drawImage(img2, 510, 510, 600, 680, 0, 200, 100, 100)
+        };
+
+
+        
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment: aligning individual items on the cross axis</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+        body {
+            margin: 10px;
+            border: 2px solid gray;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            height: 70px;
+            background-color: lightgrey;
+
+        }
+
+        .top {
+            margin: auto;
+            display: flex;
+            align-self: center;
+        }
+
+        .logo {
+            margin: 2%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            padding: 5px;
+            background-color: white;
+            border: 2px solid gray;
+            width: 10%;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            border: 2px solid gray;
+            flex-direction: row;
+        }
+
+        .menu>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid gray;
+            width: 25%;
+        }
+
+        .page {
+            display: flex;
+            justify-content: space-between;
+            height: 500px;
+            border: 2px solid gray;
+            flex-direction: row;
+        }
+
+        .page>div {
+            display: flex;
+            padding-top: 10%;
+            justify-content: center;
+            border: 1px solid gray;
+        }
+
+        .col {
+            width: 25%;
+        }
+
+        .text {
+            width: 75%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <header>
+        <div class="logo">My Logo</div>
+        <div class="top">TOP STRONY</div>
+    </header>
+
+    <section>
+
+        <div class="content">
+
+            <div class="menu">
+                <div>strona główna</div>
+                <div>galeria</div>
+                <div>lokalizacja</div>
+                <div>kontakt</div>
+            </div>
+
+            <div class="page">
+                <div class="col">LEWA KOLUMNA</div>
+                <div class="text">ZAWARTOŚĆ STRONY</div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer> STOPKA </footer>
+</body>
+
+
+
+</html>

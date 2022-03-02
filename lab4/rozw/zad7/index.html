@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RETIREMENT CHECKER</title>
+</head>
+<style>
+    form {
+        background-color: darkslategrey;
+        color: gold;
+        max-width:600px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    header {
+        background-color: darkorange;
+        padding: 1%;
+    }
+
+    .field {
+        display: flex;
+        justify-content: center;
+        padding: 1%;
+    }
+
+    .field label {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+        margin-right: 5%;
+    }
+
+
+    input[type=text],
+    input[type=password] {
+        display: flex;
+        justify-content: flex-start;
+        flex: 2;
+        margin-right: 10%;
+        padding: 1%;
+    }
+
+    select {
+        padding: 1%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .field div {
+        display: flex;
+        justify-content: flex-start;
+        flex: 2;
+        margin-right: 10%;
+        padding: 1%;
+        margin-left: -1.5%;
+    }
+
+    .terms{
+        flex:5 !important;
+    }
+
+    .terms label{
+        justify-content: flex-start !important;
+        margin-left: 2%;
+    }
+
+    .radio {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .radio label {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    input[type=radio] {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        background-color: darkorange;
+        padding: 1%;
+    }
+
+
+    input[type=submit] {
+        color: whitesmoke;
+        border: none;
+        padding: 2%;
+        margin: 1%;
+        background-color: mediumseagreen;
+    }
+
+    input[type=reset] {
+        color: whitesmoke;
+        border: none;
+        padding: 2%;
+        margin: 1%;
+        background-color: crimson;
+
+    }
+</style>
+
+<body>
+
+    <section>
+        <form>
+            <header>
+                <h1>Retirement Checker</h1>
+            </header>
+
+            <div class="field">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter First Name" pattern="[a-zxA-Z]{1,}" title="Name must only contain letters" required>
+            </div>
+
+            <div class="field">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter Last Name" pattern="[a-zA-Z]{1,}" title="Name must only contain letters" required>
+            </div>
+
+            <div class="field">
+                <label for="dob">Year Of Birth</label>
+                <input type="text" id="year" name="year" placeholder="Enter Year" pattern="[1-2]{1}[0,9]{1}[0-9]{2}" title="Please enter a proper year" required>
+            </div>
+
+            <div class="field">
+                <label for="dob">Year Of Retirement</label>
+                <input type="text" id="yearr" name="yearr" placeholder="Enter Year" pattern="2[0-1]{1}[0-9]{2}" title="Please enter a planned retirement year">
+            </div>
+
+            <div class="field">
+                <label for="gender">Gender</label>
+                <div class="gender">
+                    <div class="radio">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter Phone" pattern="[0-9]{9-10}" title="Please enter a proper phone number" required>
+            </div>
+
+
+
+            <footer>
+                <input type="submit">
+                <input type="reset" value="Cancel">
+            </footer>
+        </form>
+    </section>
+
+
+</body>
+
+<script>
+
+function yearValidation(year,ev) {
+
+var text = /^[0-9]+$/;
+if(ev.type=="blur" || year.length==4 && ev.keyCode!=8 && ev.keyCode!=46) {
+  if (year != 0) {
+      if ((year != "") && (!text.test(year))) {
+
+          alert("Please enter a numeric year");
+          return false;
+      }
+
+      if (year.length != 4) {
+          alert("Please enter a numeric year");
+          return false;
+      }
+      var current_year=new Date().getFullYear();
+      if((year < 1900) || (year > current_year))
+          {
+          alert("Year should be in range 1900 to current year");
+          return false;
+          }
+      return true;
+  } }
+}
+
+</script>

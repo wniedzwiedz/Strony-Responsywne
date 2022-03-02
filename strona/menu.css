@@ -1,0 +1,130 @@
+:root {
+    --dark: #271C34;
+    --blue1: #4F76BF;
+    --blue2: #85A9DF;
+    --blue3: #BFCEE9;
+    --neutral: #F0E4E3;
+    --accentlight: #E9A967;
+    --accentdark: #925034;
+  }
+
+header {
+    position: absolute;
+    width: 98.7%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    z-index:10;
+    margin-right: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding: 5px;
+    padding-left: 3%;
+    
+}
+
+.logo img {
+    height: 100%;
+    filter: brightness(0.5);
+}
+
+@media (min-width: 541px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    #main-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        color: var(--dark);
+        width: 80%;
+        padding-right: 5%;
+
+    }
+
+    #main-menu li {
+        padding: 1%;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .active{
+          border-bottom:3px solid var(--accentlight);   
+          color: var(--accentdark);
+       }
+}
+
+@media (max-width: 540px) {
+
+    nav {
+        display: none;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+
+    input[type="checkbox"]:checked~nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu>nav {
+        position: fixed;
+        right: 0px;
+        top: 60px;
+        width: 100%;
+        background-color: var(--neutral);
+    }
+
+    .mobile-menu>nav div {
+        padding: 1%;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu>input[type="checkbox"] {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+        margin: 0%;
+        right: 40px;
+        position: fixed;
+    }
+
+    .mobile-menu>.icon {
+        position: fixed;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

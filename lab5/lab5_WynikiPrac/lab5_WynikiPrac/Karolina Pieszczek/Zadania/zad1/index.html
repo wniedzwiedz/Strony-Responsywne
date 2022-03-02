@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment: aligning individual items on the cross axis</title>
+    <script src="script.js" defer></script>
+  <style>
+      body{
+          margin:0;
+      }
+    section{
+        height: 100vh;
+        width:100vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  </style>
+</head>
+<section id="s1">
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate, dolor eu tristique euismod, urna libero tristique erat, a maximus odio ligula vitae felis. Suspendisse potenti. Maecenas vel nulla ac nulla mollis iaculis sed id ex. Cras et nulla dolor. Sed fringilla, erat eget aliquet tincidunt, risus arcu ullamcorper eros, nec feugiat turpis dui id risus. Donec ornare felis nec leo vulputate faucibus. Suspendisse a molestie neque, at maximus sem. In hac habitasse platea dictumst. Quisque placerat gravida nisi. Vestibulum semper, ante nec maximus pellentesque, est sapien vestibulum dolor, id rutrum eros justo at augue. Pellentesque vitae libero quis magna eleifend convallis.
+
+    Praesent ac ex eget dolor pharetra porta nec id tellus. Donec molestie venenatis vehicula. Integer in sem id orci ullamcorper cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras et libero fringilla, accumsan arcu ac, elementum augue. Sed quis orci sed urna luctus pretium non eget velit. Donec sagittis in felis vel dapibus. Morbi id fermentum magna.
+    
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris nec lectus maximus, placerat arcu sed, sollicitudin nunc. Nulla vulputate dolor at sodales ultricies. Aenean lobortis at ipsum sed suscipit. Etiam at sem tempus, hendrerit elit in, porta est. Pellentesque eleifend mauris vitae eros elementum, vel dignissim leo interdum. Morbi nec velit feugiat, scelerisque orci id, ornare lorem. Curabitur et viverra ligula. Praesent auctor ligula dignissim lectus molestie sollicitudin.
+    
+    Mauris ultricies vestibulum nibh eget tincidunt. Nunc eu sem finibus, fermentum purus ac, cursus purus. Nam a erat eu odio pharetra sodales. Vestibulum non purus eget nibh semper lobortis. Vivamus consequat ipsum tristique lectus faucibus semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse tempus dolor laoreet felis blandit fringilla. Cras pharetra nisl ac tincidunt ornare. Aliquam quis ante id nulla pretium accumsan. Pellentesque vel orci non enim lobortis dignissim. Vivamus ac sodales tellus. Phasellus consectetur nibh nec laoreet faucibus.
+    
+    Etiam ac dui euismod, iaculis mauris sodales, ornare dolor. Curabitur nunc dui, mollis eget consectetur id, consectetur ac magna. Pellentesque consequat vel velit eget faucibus. Aenean viverra sem non fermentum posuere. Aenean a malesuada justo, sed aliquet ligula. Morbi sagittis sagittis feugiat. Vivamus aliquet non ligula quis varius. Duis feugiat mattis auctor. Aenean blandit sit amet risus sed laoreet. Vivamus at enim sit amet tortor placerat facilisis eget eu turpis.</p>
+</section>
+<section id="s2">
+    <video width="400" id="v2" controls autoplay>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
+      <p>
+      Video courtesy of 
+      <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+      </p>
+</section>
+<section id="s3"> 
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate, dolor eu tristique euismod, urna libero tristique erat, a maximus odio ligula vitae felis. Suspendisse potenti. Maecenas vel nulla ac nulla mollis iaculis sed id ex. Cras et nulla dolor. Sed fringilla, erat eget aliquet tincidunt, risus arcu ullamcorper eros, nec feugiat turpis dui id risus. Donec ornare felis nec leo vulputate faucibus. Suspendisse a molestie neque, at maximus sem. In hac habitasse platea dictumst. Quisque placerat gravida nisi. Vestibulum semper, ante nec maximus pellentesque, est sapien vestibulum dolor, id rutrum eros justo at augue. Pellentesque vitae libero quis magna eleifend convallis.
+
+    Praesent ac ex eget dolor pharetra porta nec id tellus. Donec molestie venenatis vehicula. Integer in sem id orci ullamcorper cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras et libero fringilla, accumsan arcu ac, elementum augue. Sed quis orci sed urna luctus pretium non eget velit. Donec sagittis in felis vel dapibus. Morbi id fermentum magna.
+    
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris nec lectus maximus, placerat arcu sed, sollicitudin nunc. Nulla vulputate dolor at sodales ultricies. Aenean lobortis at ipsum sed suscipit. Etiam at sem tempus, hendrerit elit in, porta est. Pellentesque eleifend mauris vitae eros elementum, vel dignissim leo interdum. Morbi nec velit feugiat, scelerisque orci id, ornare lorem. Curabitur et viverra ligula. Praesent auctor ligula dignissim lectus molestie sollicitudin.
+    
+    Mauris ultricies vestibulum nibh eget tincidunt. Nunc eu sem finibus, fermentum purus ac, cursus purus. Nam a erat eu odio pharetra sodales. Vestibulum non purus eget nibh semper lobortis. Vivamus consequat ipsum tristique lectus faucibus semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse tempus dolor laoreet felis blandit fringilla. Cras pharetra nisl ac tincidunt ornare. Aliquam quis ante id nulla pretium accumsan. Pellentesque vel orci non enim lobortis dignissim. Vivamus ac sodales tellus. Phasellus consectetur nibh nec laoreet faucibus.
+    
+    Etiam ac dui euismod, iaculis mauris sodales, ornare dolor. Curabitur nunc dui, mollis eget consectetur id, consectetur ac magna. Pellentesque consequat vel velit eget faucibus. Aenean viverra sem non fermentum posuere. Aenean a malesuada justo, sed aliquet ligula. Morbi sagittis sagittis feugiat. Vivamus aliquet non ligula quis varius. Duis feugiat mattis auctor. Aenean blandit sit amet risus sed laoreet. Vivamus at enim sit amet tortor placerat facilisis eget eu turpis.</p>
+</section>
+<body>
+
+    </body>
+    </html>

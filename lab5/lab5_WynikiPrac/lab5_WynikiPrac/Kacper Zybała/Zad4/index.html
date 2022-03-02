@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Zadanie czwarte - Kacper Zybała</title>
+    <meta charset="utf-8"/>
+<style>
+img
+{
+  width: 960px;
+  height: 540px;
+}
+
+section
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 0.2vw;
+}
+
+section > *
+{
+  padding: 2vw;
+  margin-bottom: 1vh;
+  text-align: justify;
+  border: 2px dashed brown;
+
+  transition: all 1s ease-in-out;
+  opacity: 0.1;
+  transform: translateX(-300px);
+}
+
+.visible
+{
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+</style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <img src="img/a7.jpg" loading="lazy"/>
+      <span>
+Piksel (ang. pixel) – najmniejszy jednolity (przedstawiający konkretny kolor) element obrazu[1] prezentowanego na wyświetlaczach urządzeń cyfrowych lub drukowanego w technice druku punktowego. Nazwa piksel jest zbitką angielskich słów pictures oraz element.
+
+Jeden piksel w odniesieniu do monitorów komputerowych to bardzo mały kwadrat (zwykle w granicach 0,28 mm, co daje 90 ppi), prostokąt lub ewentualnie trójkąt widzialny z odległości użytkowej jako wypełniony jednolitym kolorem. Tryb pracy monitora, a konkretnie jego rozdzielczość, to właśnie liczba pikseli, jakie matryca ma w pionie i poziomie. Przykładowo matryca Full HD, czyli o rozdzielczości 1920 × 1080, ma 1920 pikseli w każdej linii, a linii tych ma 1080. W przypadku wyświetlaczy w smartfonach lub tabletach rozmiar ich pikseli jest wielokrotnie mniejszy ze względu na znacznie mniejszą odległość, z jakiej użytkownicy z nich korzystają. Tutaj wyświetlacze nierzadko osiągają ponad 360 ppi, co jest prawie czterokrotnie większą niż na monitorach komputerowych. </span>
+      <img src="img/a9.jpg" loading="lazy"/>
+      <span>Grafika komputerowa – dyscyplina zajmująca się cyfrową syntezą i manipulacją treści wizualnych. Ze względu na reprezentację danych dzieli się na grafikę rastrową i wektorową, a ze względu na charakter danych na grafikę dwuwymiarową, trójwymiarową i ruchomą. Obejmuje także przetwarzanie obrazów. Grafikę komputerową można także podzielić na teoretyczną skupiającą się algorytmach graficznych i praktyczną, skupiającą się na manipulacji i tworzeniu obrazów i modelowaniu trójwymiarowym. (np. w programie Blender). Grafika komputerowa stanowi podstawę współczesnych gier, animacji, symulacji oraz wizualizacji. Grafika komputerowa jest działem informatyki i grafiki. </span>
+      <img src="img/a8.jpg" loading="lazy"/>
+      <span>
+Woksel (ang. volumetric picture element, w skrócie voxel) – najmniejszy element przestrzeni w grafice trójwymiarowej, w pewnym sensie odpowiednik piksela w grafice dwuwymiarowej. Przy użyciu wokseli scenę przedstawia się jako trójwymiarową tablicę, na przykład 512×512×512 wokseli.
+
+Najczęściej wokseli używa się do przedstawiania i analizy danych medycznych lub naukowych wtedy, gdy ważne są informacje zawarte wewnątrz analizowanych obiektów. Z grafiką opartą o woksele najczęściej można się zetknąć na obrazach otrzymywanych z różnego typu urządzeń tomograficznych. Poza tym można też je spotkać w scenowych demonstracjach, na co pozwoliły nowoczesne, wydajne karty graficzne. </span>
+      <img src="img/a3.jpg" loading="lazy"/>
+      <span>
+Animacja – technika filmowa polegająca na tworzeniu efektu ożywienia martwych kształtów przez dokonywanie serii pojedynczych zdjęć rysunków, wycinanek, kukiełek lub sylwetek i wyświetlaniu ich w sposób ciągły.
+
+Pierwsze pionierskie rozwiązania z dziedziny animacji powstawały jeszcze przed powstaniem filmu - już w 1832 Joseph Plateau opracował fenakistiskop tworzący wrażenie ruchu szybko przesuwających się obrazów. Dwa lata później William George Horner rozwinął ten pomysł, tworząc zoetrop - obracający się cylinder zawierający serię obrazków przedstawiających kolejne etapy ruchu. W 1877 Émile Reynaud wynalazł praksinoskop, a w 1892 stworzył pierwszy krótki film animowany - Pauvre Pierrot. Innym pionierem techniki animacji był James Stuart Blackton, który eksperymentował z animacją poklatkową, a w 1906 został autorem filmu Humorous Phases of Funny Faces. 
+      </span>
+      <img src="img/a5.jpg" loading="lazy"/>
+      <span>
+Animacja komputerowa – sztuka tworzenia ruchomych obiektów z wykorzystaniem komputerów. Jest dziedziną grafiki komputerowej i animacji. W coraz większym zakresie jest ona realizowana jako animacja 3D (trójwymiarowa), choć w zastosowaniach dysponujących niską przepustowością sprzętową i wymagających przetwarzania obrazów w czasie rzeczywistym cały czas ważną pozycję utrzymuje animacja 2D (dwuwymiarowa, płaska). Czasami docelowym medium animacji jest sam system komputerowy, ale zdarza się, że animacja przeznaczona jest dla innych mediów, takich jak film. Animację komputerową czasami określa się skrótem CGI (od ang. Computer Generated Imagery, lub Computer Generated Imaging) – szczególnie w zastosowaniach kinematograficznych.
+
+By stworzyć iluzję ruchu, na ekranie komputera wyświetlany jest określony obraz, po czym szybko zamienia się go na następny – podobny do poprzedniego, lecz z nieznacznymi zmianami w pozycji obiektów. Technika ta jest identyczna z zastosowaniami telewizyjnymi i kinowymi.
+
+Animacja komputerowa jest generalnie rzecz biorąc cyfrowym spadkobiercą sztuki animacji nieruchomych obiektów trójwymiarowych (np. kukiełek) i animacji poklatkowej ilustracji płaskich. W przypadku animacji 3D, obiekty (modele) budowane (modelowane) są na ekranie komputera, po czym trójwymiarowe figury otrzymują wirtualny szkielet. W przypadku animacji płaskich, korzysta się z oddzielnych obiektów (ilustracji) i oddzielnych przezroczystych warstw, nie zawsze zaś z wirtualnych szkieletów. Kończyny, oczy, usta, czy ubrania modelu są następnie poruszane przez animatora w kolejnych klatkach kluczowych. Różnice wyglądu między klatkami kluczowymi są następnie przeliczane przez komputer, korzystając z procesów tweeningu i morfingu. Ostatnim stadium prac jest renderowanie. 
+      </span>
+      <img src="img/a4.jpg" loading="lazy"/>
+      <span>
+Renderowanie w grafice trójwymiarowej, nazywane też w tym kontekście obrazowaniem lub prezentacją, obejmuje analizę modelu danej sceny oraz utworzenie na jej podstawie dwuwymiarowego obrazu wyjściowego w formie statycznej lub animacji. Podczas renderowania rozpatrywane są m.in. odbicia, cienie, załamania światła, wpływy atmosfery (w tym mgła), efekty wolumetryczne itp. Jest to bardzo czasochłonna operacja nie wymagająca, poza przygotowaniem, żadnej ingerencji ze strony człowieka. Renderowanie może być przeprowadzone praktycznie w każdym programie do tworzenia grafiki trójwymiarowej, niebędącym wyłącznie programem do modelowania (modelerem). Przykładami takich programów są np. 3ds Max, Cinema 4D, LightWave 3D, PYTHA-RadioLab, Blender, Mental Ray, V-ray, Maxwell render czy też dostępne jako wtyczki do nich: Softimage XSi, CATIA, Final Render, Brazil R/S. 
+      </span>
+    </section>
+  </body>
+</html>

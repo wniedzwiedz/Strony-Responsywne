@@ -1,0 +1,37 @@
+
+.blur{
+    position: absolute;
+    width: 99%;
+    left: 0px;
+    z-index:6;
+
+    -webkit-backdrop-filter: blur(0.7px);
+    backdrop-filter: blur(0.7px);
+}
+
+.btop {
+    top: 0px;
+}
+
+.bbot {
+    bottom: 0px;
+    top:auto;
+}
+
+.b1 {
+    height: 150px;
+}
+
+.b2 {
+    height: 140px;
+}
+
+.b3 {
+    height: 125px;
+}
+
+.b4 {
+    height: 110px;
+}
+
+

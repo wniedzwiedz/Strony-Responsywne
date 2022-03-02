@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment: aligning individual items on the cross axis</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+        body {
+            padding: 10px;
+            border: 2px solid gray;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            height: 600px;
+            grid-gap: 10px;
+            color: rgb(197, 49, 0);
+        }
+
+
+        div {
+            background-color: lightsalmon;
+            border: 3px solid salmon;
+            border-radius: 15px;
+            opacity: 50%;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 500;
+ 
+        }
+
+        .jeden {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 1;
+        }
+
+        .dwa {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .trzy {
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+
+        .cztery {
+            grid-row: 3;
+            grid-column: 3;
+        }
+
+        .pięć {
+            grid-row: 4;
+            grid-column: 2;
+        }
+
+        .sześć {
+            grid-row: 4;
+            grid-column: 3;
+        }
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <div class="jeden">jeden</div>
+    <div class="dwa">dwa</div>
+    <div class="trzy">trzy</div>
+    <div class="cztery">cztery</div>
+    <div class="pięć">pięć</div>
+    <div class="sześć">sześć</div>
+</body>
+
+
+
+</html>

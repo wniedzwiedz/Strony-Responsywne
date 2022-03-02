@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        .field {
+            border: 1px solid #aaaaaa;
+            width: 150px;
+            height: 150px;
+        }
+
+        .number {
+            background-color: gray;
+            width: 150px;
+            height: 150px;
+            color: honeydew;
+            font-size: 110px;
+            text-align: center;
+        }
+
+
+
+        .background {
+            background-color: black;
+            width: 607px;
+            height: 607px;
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto auto auto auto;
+            padding: 1px;
+        }
+    </style>
+    <script>
+        function swapTiles(cell1, cell2) {
+            var temp = document.getElementById(cell1).innerHTML;
+            document.getElementById(cell1).innerHTML = document.getElementById(cell2).innerHTML;
+            document.getElementById(cell2).innerHTML = temp;
+            
+        }
+        function swapCheck(cell1, cell2) {
+            var num1=parseInt(cell1.substr(1))-1;
+            var num2=parseInt(cell2.substr(1))-1;
+            var c1=num1%4;
+            var r1=(num1-c1)/4;
+            var c2=num2%4;
+            var r2=(num2-c2)/4;
+            var n1 = document.getElementById(cell1).innerHTML;
+            var n2 = document.getElementById(cell2).innerHTML;
+            if(( (r1==r2 && Math.abs(c1-c2)==1) || (c1==c2 && Math.abs(r1-r2)==1) )&& (n1==""||n2=="") ){
+                swapTiles(cell1, cell2);
+            }
+
+        }
+
+
+        function shuffle() {
+            for (var r = 1; r <= 16; r++) {
+                var x = Math.floor(Math.random() * 16 + 1);
+                swapTiles("n" + r, "n" + x);
+            }
+        }
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            if (ev.target.querySelectorAll(".number").length > 0) { return; }
+            else{
+            var data = ev.dataTransfer.getData("text");
+            swapCheck(ev.target.id,data);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="background">
+
+        <div class="field" id="f1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n1" draggable="true" ondragstart="drag(event)">1</div>
+        </div>
+        <div class="field" id="f2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n2" draggable="true" ondragstart="drag(event)">2</div>
+        </div>
+        <div class="field" id="f3" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n3" draggable="true" ondragstart="drag(event)">3</div>
+        </div>
+        <div class="field" id="f4" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n4" draggable="true" ondragstart="drag(event)">4</div>
+        </div>
+        <div class="field" id="f5" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n5" draggable="true" ondragstart="drag(event)">5</div>
+        </div>
+        <div class="field" id="f6" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n6" draggable="true" ondragstart="drag(event)">6</div>
+        </div>
+        <div class="field" id="f7" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n7" draggable="true" ondragstart="drag(event)">7</div>
+        </div>
+        <div class="field" id="f8" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n8" draggable="true" ondragstart="drag(event)">8</div>
+        </div>
+        <div class="field" id="f9" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n9" draggable="true" ondragstart="drag(event)">9</div>
+        </div>
+        <div class="field" id="f10" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n10" draggable="true" ondragstart="drag(event)">10</div>
+        </div>
+        <div class="field" id="f11" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n11" draggable="true" ondragstart="drag(event)">11</div>
+        </div>
+        <div class="field" id="f12" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n12" draggable="true" ondragstart="drag(event)">12</div>
+        </div>
+        <div class="field" id="f13" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n13" draggable="true" ondragstart="drag(event)">13</div>
+        </div>
+        <div class="field" id="f14" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n14" draggable="true" ondragstart="drag(event)">14</div>
+        </div>
+        <div class="field" id="f15" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n15" draggable="true" ondragstart="drag(event)">15</div>
+        </div>
+        <div class="field" id="f16" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="number" id="n16" draggable="true" ondragstart="drag(event)"></div>
+        </div>
+
+    </div>
+    <button onClick="shuffle();">SHUFFLE</button>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+:root {
+    --dark: #271C34;
+    --blue1: #4F76BF;
+    --blue2: #85A9DF;
+    --blue3: #BFCEE9;
+    --neutral: #F0E4E3;
+    --accentlight: #E9A967;
+    --accentdark: #925034;
+  }
+  
+  html {
+    color: var(--dark);
+  }
+
+  .pushable {
+    background: var(--accentdark);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: var(--accentlight);
+    color: var(--neutral);
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+
+  a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+ .invisible {
+  background-image: none;
+  background-color: var(--neutral);
+ }
+
+.invisible > .parallax__layer div {
+  display: none;
+}
